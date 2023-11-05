@@ -1,0 +1,25 @@
+.ct-detail {
+
+  &__back {
+    color: rgb(247, 147, 26);
+    text-decoration: none;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: 24px;
+    padding: 15px 0;
+  }
+
+  table {
+    border: 1px solid rgb(47, 46, 49);
+    color: #FFF;
+    width: 100%;
+
+    td {
+      border: 1px solid rgb(47, 46, 49);
+      padding: 8px 15px;
+    }
+  }
+
+}

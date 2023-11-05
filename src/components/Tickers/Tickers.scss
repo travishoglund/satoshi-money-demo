@@ -1,0 +1,28 @@
+.cp-tickers {
+
+  &__row {
+
+  }
+
+  &__contain {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cp-ticker {
+    margin-bottom: 24px;
+    width: calc(33.33% - 15px);
+
+    @media only screen and (max-width: 767px) {
+      width: calc(50% - 20px);
+    }
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+
+
+}

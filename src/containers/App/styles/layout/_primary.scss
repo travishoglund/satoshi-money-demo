@@ -1,0 +1,19 @@
+html {
+  background: #171717;
+}
+
+.page {
+
+  margin: 0;
+
+  &__row {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  &__contain {
+    padding: 0 30px;
+  }
+
+}

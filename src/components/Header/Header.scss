@@ -1,0 +1,36 @@
+.header {
+
+  padding-bottom: 45px;
+
+  &__row {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__contain {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+  }
+
+  &__logo {
+    flex: 1;
+
+    svg {
+      height: auto;
+      width: 150px;
+    }
+  }
+
+  &__author {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+    img {
+      border-radius: 20px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

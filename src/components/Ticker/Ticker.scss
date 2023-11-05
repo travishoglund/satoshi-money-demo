@@ -1,0 +1,50 @@
+.cp-ticker {
+
+  background-color: #121212;
+  border: 1px solid rgb(47 46 49/1);
+  border-radius: 30px;
+  min-height: 150px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  &__inner {
+    padding: 30px 15px;
+
+  }
+
+  &--loading {
+    background-image: none !important;
+  }
+
+  &__title {
+    color: rgb(247, 147, 26);
+    font-weight: 700;
+  }
+
+  &__percentage {
+    color: #aaa;
+    padding: 5px 0;
+  }
+
+  &__price {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+}
+
+$symbols: ("tBTCUSD", "tETHUSD", "tADAUSD", "tUSTUSD", "tDOTUSD", "tXRPUSD", "tLTCUSD", "tXLMUSD");
+
+@each $symbol in $symbols {
+  .price-bounce-#{$symbol} {
+    animation: animate-keyframes-#{$symbol} 1s;
+  }
+
+  @keyframes animate-keyframes-#{$symbol} {
+    from {opacity: 0.01}
+    to {opacity: 1}
+  }
+}
